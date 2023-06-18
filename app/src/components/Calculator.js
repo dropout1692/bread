@@ -9,7 +9,7 @@ function Calculator() {
   const [other, setOther] = useState(0);
 
   const get = (name) => {
-    let value = parseInt(document.getElementsByName(name)[0].value);
+    let value = parseFloat(document.getElementsByName(name)[0].value);
     return (isNaN(value) ? 0 : value);
   }
 

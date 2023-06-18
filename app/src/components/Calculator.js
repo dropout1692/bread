@@ -8,6 +8,10 @@ function Calculator() {
   const [salt, setSalt] = useState(0);
   const [other, setOther] = useState(0);
 
+  const calculatorVersion = () => {
+    return "v0.0.3 - 18.6.2023";
+  }
+
   const get = (name) => {
     let value = parseFloat(document.getElementsByName(name)[0].value);
     return (isNaN(value) ? 0 : value);
@@ -37,7 +41,6 @@ function Calculator() {
   }
 
   return <>
-    <form></form>
     <div id='calculator-frame'>
       <div id='results'>
         <div>
@@ -79,6 +82,9 @@ function Calculator() {
             <input type='text' name='other' maxLength='5'/>
           </div>
         </form>
+      </div>
+      <div id='version'>
+        {calculatorVersion()}
       </div>
     </div>
   </>

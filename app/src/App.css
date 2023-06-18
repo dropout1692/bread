@@ -3,6 +3,10 @@ body {
   background-size: cover;
 }
 
+#wrapper  {
+  position: relative;
+}
+
 #calculator-frame {
   border-radius: 10px;
   position: fixed;
@@ -10,7 +14,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  width: 400px;
+  width: 350px;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -24,20 +28,29 @@ body {
   float: left;
 }
 
-#calculator-frame div label{
+#calculator-frame div label {
   float: left;
 }
 
-#calculator-frame div input{
+#calculator-frame div input {
   float: right;
   font-size: 1em;
   width: 30%;
 }
 
-#results span{
+#results span {
   float: right;
 }
 
 #inputs {
   margin-top: 20px;
+}
+
+#version {
+  margin-top: 10px;
+  width: 350px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 0.4em;
 }
